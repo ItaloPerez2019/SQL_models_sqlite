@@ -20,3 +20,4 @@ class User(SqlAlchemyBase):
     rentals = orm.relation("Rental", order_by=[
         Rental.start_time.desc(),
     ], back_populates='user')
+ 

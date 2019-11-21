@@ -32,8 +32,8 @@ def setup_db():
     global user
     session_factory.global_init('hover_share.sqlite')
     session_factory.create_tables()
-    import_data.import_if_empty()
-    user = data_service.get_default_user()
+    # import_data.import_if_empty()
+    # user = data_service.get_default_user()
 
 
 def rent_a_scooter():

@@ -19,3 +19,7 @@ class Scooter(SqlAlchemyBase):
                             sa.ForeignKey('locations.id'),
                             nullable=True)
     location = orm.relation('Location')
+
+
+
+
